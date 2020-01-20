@@ -1,0 +1,74 @@
+// Variables
+$light-color: #fff;
+$light-color-sc: #ddd;
+$dark-color: #191919;
+$dark-color-sc: #222;
+
+// General
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+// Styling
+body {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background-color: $dark-color;
+  color: $light-color;
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin-top: 2.5%;
+
+    section {
+      background-color: $dark-color-sc;
+      padding: 0.5rem;
+
+      h2 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      input[type="text"] {
+        display: block;
+        width: 90%;
+        border: none;
+        padding-bottom: 5px;
+        border-bottom: solid $light-color 1px;
+        color: white;
+        background-color: inherit;
+        outline: none;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: $light-color-sc 1px solid;
+        padding: 0 0.25rem;
+        margin-bottom: 0.5rem;
+
+        &.prototype {
+          display: none;
+        }
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 0 0.25rem;
+        background-color: $light-color;
+      }
+    }
+  }
+}

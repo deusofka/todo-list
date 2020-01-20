@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/03de6fac72.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Tasks List</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Add</h2>
+        <form action="">
+          <input id="add-inp" type="text" placeholder="New Task" />
+          <button id="add-btn">Add Task</button>
+        </form>
+      </section>
+      <section>
+        <h2>List</h2>
+        <form action="">
+          <input id="filter-inp" type="text" placeholder="Filter Task" />
+        </form>
+        <article>
+          <!-- For visualization purposes only -->
+          <div class="prototype">
+            <p>Do Stuff</p>
+            <i class="fas fa-times"></i>
+          </div>
+        </article>
+        <button id="clear-btn">Clear Tasks</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
