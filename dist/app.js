@@ -57,6 +57,7 @@ add.addEventListener("click", function(e) {
   if (addInput.value != null && addInput.value.trim() != "") {
     createDomTask(addInput.value);
     updateLocalStorage(addInput.value);
+    addInput.value = "";
   }
 });
 
