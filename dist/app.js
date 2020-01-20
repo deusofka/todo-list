@@ -21,6 +21,9 @@ let filterInput = document.querySelector("input#filter-inp");
   2. Get local storage
 **********************/
 tasks = JSON.parse(localStorage.getItem("tasks"));
+if (tasks == null) {
+  tasks = [];
+}
 tasks.forEach(function(task) {
   createDomTask(task);
 });
